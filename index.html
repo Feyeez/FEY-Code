@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jaychen Favourite Car</title>
+		<link rel="icon" src="./logo.jpg">
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background: #280137;
+				background: linear-gradient(90deg,rgba(40, 1, 55, 1) 0%, rgba(25, 0, 255, 1) 50%, rgba(183, 0, 255, 1) 100%);
+				text-align: center;
+				padding: 20px;
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			.card {
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				padding: 15px;
+				margin: 20px auto;
+				max-width: 100%;
+				background: #5a5a5a;
+				color: white;
+				box-shadow: 5px 5px 5px black;
+			}
+
+			.card img {
+				width: 500px;
+				border-radius: 10px;
+			}
+
+			.card-grid {
+				display: grid;
+				gap: 20px;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+			}
+
+			.btn {
+				display: inline-block;
+				padding: 10px 20px; /* put 10 px and 20 px space on top and right inside of button */
+				margin-top: 10px; /* put 10 px space on top of button */
+				background-color: #28a745;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+			}
+
+			.btn:hover {
+				background-color: #00ff3c;
+			}
+
+			#Lamborgini_Sesto_Elemento_img:hover {
+				animation: pop-up 2s infinite;
+			}
+
+			#NISSAN_GTR_R34_V_SPEC_II_N1_img:hover {
+				animation: pop-up 2s infinite;
+			}
+
+			#Ferrari_LaFerrari_Aperta_img:hover {
+				animation: pop-up 2s infinite;
+			}
+
+			#McLaren_Senna_GTR_img:hover {
+				animation: pop-up 2s infinite;
+			}
+
+			@keyframes pop-up {
+				from {
+					transform: scale(1);
+				}
+
+				to {
+					transform: scale(1.2);
+				}
+			}
+
+			.header-box {
+				border-radius: 10px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				font-family: 'Times New Roman', Times, serif;
+				background: #5a5a5a;
+				color: white;
+				box-shadow: 5px 5px 5px black;
+			}
+
+			.header-box h1 {
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="header-box">
+		<h1>Rare Cars Info!</h1>
+		<p>By Jay Fey</p>
+	</div>
+
+	<div class="card-grid">
+		<div class="card">
+			<img src="./Lamborgini Sesto Elemento.jpg" alt="Lamborgini Sesto Elemento" id="Lamborgini_Sesto_Elemento_img">
+			<h2>Lamborgini Sesto Elemento</h2>
+			<p>The Lamborghini Sesto Elemento is a limited-edition, track-only supercar known for its extremely lightweight construction using advanced carbon fiber technology. <br><br> It features a 5.2-liter V10 engine, all-wheel drive, and can accelerate from (0-100) km/h in just 2.5 seconds. <br><br> Production was limited to only 20 units, and it was designed to be an exclusive, high-performance car for track use only, not for road approval. </p>
+			<a class="btn" href="#">Buy Now!</a>
+		</div>
+	
+		<div class="card">
+			<img src="./NISSAN GTR R34 V SPEC II N1.jpg" alt="NISSAN GTR R34 V SPEC II N1.jpg" id="NISSAN_GTR_R34_V_SPEC_II_N1_img">
+			<h2>NISSAN GTR R34 V SPEC II N1</h2>
+			<p>The Nissan Skyline GT-R V-Spec II N1 (R34) was a rare, homologation-focused version of the R34 GT-R, featuring an N1-spec RB26DETT twin-turbo engine, a 6-speed manual transmission, and a more aggressive V-Spec II aesthetic with a carbon fiber bonnet and stiffer suspension. <br><br> While the standard V-Spec II had 280 ps, the N1 versions were built with stronger N1 racing engine blocks, pistons, and camshafts, signifying a more hardcore, track-ready foundation for tuners. <br><br> Only a very limited number were built, making it one of the most coveted R34 models. with only 18 units produced</p>
+			<a class="btn" href="#">Buy Now!</a>
+		</div>
+
+		<div class="card">
+			<img src="./Ferrari LaFerrari Aperta.jpg" alt="Ferrari LaFerrari Aperta" id="Ferrari_LaFerrari_Aperta_img">
+			<h2>Ferrari LaFerrari Aperta</h2>
+			<p>The Ferrari LaFerrari Aperta is the open-top, convertible version of the LaFerrari hypercar, featuring a removable soft top for open-air driving. <br><br> Launched to celebrate Ferrari's 70th anniversary, it's a limited-production hybrid hypercar with a powerful V12 engine and an electric motor, producing a combined ~950 horsepower, making it Ferrari's fastest road-going spider. Only 210 units of the Ferrari LaFerrari Aperta were produced</p>
+			<a class="btn" href="#">Buy Now!</a>
+		</div>
+
+		<div class="card">
+			<img src="./McLaren Senna GTR.jpg" alt="McLaren Senna GTR" id="McLaren_Senna_GTR_img">
+			<h2>McLaren Senna GTR</h2>
+			<p>The McLaren Senna GTR is a track-only hypercar that is a more powerful and extreme version of the road-legal Senna, producing 825 hp and 800 Nm of torque from its 4.0-liter twin-turbo V8 engine. <br><br> It generates up to 1,000 kg of downforce, uses a motorsport-derived suspension, and features various performance-oriented upgrades to deliver unparalleled track performance. <br><br> It was launched in 2019 with a limited production run of just 75 units. </p>
+			<a class="btn" href="#">Buy Now!</a>
+		</div>
+	</div>
+
+	</body>
+</html>
