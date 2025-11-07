@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"> <!-- encoding type-->
 		<title>Rare Car Info</title>
-		<link rel="icon" src="./logo.jpg">
 		<style>
 			body {
 				font-family: Arial, sans-serif;
@@ -35,19 +34,19 @@
 
 			.card-grid {
 				display: grid;
-				gap: 20px;
+				gap: 20px;	/* For to seperate the boxes */
 				grid-template-columns: 1fr 1fr;
 				grid-template-rows: 1fr 1fr;
 			}
 
-			.btn {
-				display: inline-block;
-				padding: 10px 20px; /* put 10 px and 20 px space on top and right inside of button */
-				margin-top: 10px; /* put 10 px space on top of button */
+			.btn {  /* Button*/
+				display: inline-block; /* make a span from left to right from the screen */
+				padding: 10px 20px; /* Space inside a div box */
+				margin-top: 10px; /* How much space on the top */
 				background-color: #28a745;
 				color: white;
 				text-decoration: none;
-				border-radius: 5px;
+				border-radius: 5px; /* So it doesnt make the text box pointy */
 			}
 
 			.btn:hover {
@@ -72,7 +71,7 @@
 
 			@keyframes pop-up {
 				from {
-					transform: scale(1);
+					transform: scale(1);	/* for the animation */
 				}
 
 				to {
@@ -101,7 +100,7 @@
 		<p>By Jay Fey</p>
 	</div>
 
-	<div class="card-grid">
+	<div class="card-grid">	<!--To diffrintatiata the html tag -->
 		<div class="card">
 			<img src="./Lamborgini Sesto Elemento.jpg" alt="Lamborgini Sesto Elemento" id="Lamborgini_Sesto_Elemento_img">
 			<h2>Lamborgini Sesto Elemento</h2>
@@ -134,3 +133,4 @@
 	</body>
 
 </html>
+
