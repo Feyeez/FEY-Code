@@ -129,7 +129,71 @@
 			<a class="btn" href="#">Buy Now!</a>
 		</div>
 	</div>
-		
+		<!-- Admin Panel Styles -->
+<style>
+  #adminPanel {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #111;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    z-index: 9999;
+  }
+  #adminPanel input,
+  #adminPanel textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+  }
+  #adminPanel button {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- Admin Panel -->
+<div id="adminPanel">
+  <h3>Admin Panel</h3>
+  <label>Element Selector:</label>
+  <input type="text" id="selector" placeholder="e.g. h1, #title, .content" />
+  
+  <label>New Content:</label>
+  <textarea id="newContent" rows="4" placeholder="Type new text here..."></textarea>
+  
+  <button onclick="updateContent()">Update</button>
+  <button onclick="toggleAdmin()">Hide Panel</button>
+</div>
+
+<script>
+  function updateContent() {
+    const selector = document.getElementById('selector').value;
+    const newContent = document.getElementById('newContent').value;
+    const element = document.querySelector(selector);
+    if (element) {
+      element.innerHTML = newContent;
+      alert('Content updated!');
+    } else {
+      alert('Element not found.');
+    }
+  }
+
+  function toggleAdmin() {
+    const panel = document.getElementById('adminPanel');
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
 	</body>
 
 </html>
+
